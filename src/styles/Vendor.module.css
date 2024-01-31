@@ -1,0 +1,50 @@
+.create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.create>form {
+    padding: 20px;
+    width: 700px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+}
+
+.create>form>div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.create>form>div>label {
+    font-size: 16px;
+    opacity: 80%;
+}
+
+.create>form>div>label::after {
+    content: '*';
+    color: red;
+}
+
+.create>form>button {
+    margin-top: 20px;
+    grid-column: 1/3;
+}
+
+@media (0px <=width <=580px) {
+    .create>form {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .create>form>button {
+        grid-column: 1;
+    }
+}
+
+@media (0px <=width <=750px) {
+    .create>form {
+        width: 100%;
+    }
+}

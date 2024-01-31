@@ -1,0 +1,14 @@
+.searchbar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.searchbar>input {
+    height: 18px;
+    width: 280px;
+}
+
+.searchbar>input::placeholder {
+    font-size: 14px;
+}

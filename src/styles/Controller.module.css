@@ -1,0 +1,41 @@
+.controller {
+    margin: 0px 0px 40px 0px;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.actionbar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.actionbar form {
+    width: 40px;
+}
+
+.actionbar button {
+    background: none;
+    color: #fff;
+    padding: 0;
+}
+
+.actionbar a {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.pagenation {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 40%;
+}

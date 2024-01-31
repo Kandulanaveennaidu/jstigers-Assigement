@@ -1,0 +1,88 @@
+.login {
+    display: flex;
+    height: 100vh;
+}
+
+.login>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.login>div:nth-child(1) {
+    background-image: url(/bg.svg);
+    background-size: cover;
+    background-position: center;
+    font-size: 34px;
+}
+
+.heading {
+    margin-bottom: 40px;
+}
+
+.login>div:nth-child(1) h1 {
+    margin: 0;
+}
+
+.login>div:nth-child(2) {
+    padding-top: 200px;
+    justify-content: flex-start;
+}
+
+.login form {
+    width: 400px;
+}
+
+.login button {
+    margin-top: 10px;
+}
+
+.devider {
+    border-top: 1px dashed var(--border_color);
+    width: 400px;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.devider p {
+    position: absolute;
+    top: -14px;
+    left: 48%;
+    right: 50%;
+    margin: 0;
+}
+
+.google_button {
+    background: #fff;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+.google_button p {
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 80%;
+}
+
+@media(0px <=width <=500px) {
+    .login form {
+        width: 90%;
+    }
+
+    .devider {
+        width: 90%;
+    }
+
+}
+
+@media(0px <=width <=1200px) {
+    .login>div:nth-child(1) {
+        display: none;
+    }
+}
